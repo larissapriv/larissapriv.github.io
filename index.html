@@ -13,11 +13,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
         body {
-            background-color: #1a1a2e;
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -27,7 +27,7 @@
             position: relative;
         }
 
-        /* Imagem de fundo */
+        /* Imagem de fundo com overlay melhorado */
         .background-image {
             position: absolute;
             top: 0;
@@ -35,8 +35,24 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            z-index: -2;
+            opacity: 0.3;
+            filter: blur(1px) brightness(0.7);
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                45deg,
+                rgba(131, 58, 180, 0.2) 0%,
+                rgba(253, 29, 29, 0.2) 50%,
+                rgba(252, 175, 69, 0.2) 100%
+            );
             z-index: -1;
-            opacity: 0.4;
         }
 
         .container {
@@ -49,29 +65,38 @@
         .title {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            color: #e94560;
+            background: linear-gradient(45deg, #833AB4, #E1306C, #FCAF45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             min-height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
         .typed-text {
-            border-right: 3px solid #e94560;
+            border-right: 3px solid #E1306C;
             padding-right: 5px;
             animation: blink 0.7s infinite;
         }
 
         @keyframes blink {
-            0%, 100% { border-color: #e94560; }
+            0%, 100% { border-color: #E1306C; }
             50% { border-color: transparent; }
         }
 
         .subtitle {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 40px;
-            color: #c9c9c9;
+            color: #e0e0e0;
             line-height: 1.6;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .buttons {
@@ -82,96 +107,165 @@
         }
 
         .btn {
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 18px 35px;
+            font-size: 1.1rem;
             border: none;
-            border-radius: 50px;
+            border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-weight: bold;
+            font-weight: 600;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             text-decoration: none;
-            min-width: 200px;
+            min-width: 220px;
+            position: relative;
+            overflow: hidden;
         }
 
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        /* BOTÃO 1 - WHATSAPP (Verde característico) */
         .btn-primary {
-            background: linear-gradient(45deg, #e94560, #b9314f);
+            background: linear-gradient(90deg, #25D366 0%, #128C7E 50%, #075E54 100%);
             color: white;
-            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
 
+        /* BOTÃO 2 - TELEGRAM (Azul característico) */
         .btn-secondary {
-            background: linear-gradient(45deg, #533483, #351f5e);
+            background: linear-gradient(90deg, #0088CC 0%, #006699 50%, #004466 100%);
             color: white;
-            box-shadow: 0 4px 15px rgba(83, 52, 131, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
         }
 
+        /* BOTÃO 3 - PRIVACY (Roxo/Lilás para privacidade) */
         .btn-privacy {
-            background: linear-gradient(45deg, #ff7b25, #e85d04);
+            background: linear-gradient(90deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%);
             color: white;
-            box-shadow: 0 4px 15px rgba(255, 123, 37, 0.4);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
         }
 
         .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
         }
 
         .btn:active {
-            transform: translateY(0);
+            transform: translateY(-2px) scale(1.02);
         }
 
         .emoji {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
         }
 
-        /* Efeitos decorativos */
+        /* Efeitos decorativos modernos */
         .decoration {
             position: absolute;
             border-radius: 50%;
-            background: rgba(233, 69, 96, 0.1);
+            background: radial-gradient(circle, rgba(131, 58, 180, 0.15) 0%, transparent 70%);
             z-index: -1;
+            animation: float 6s ease-in-out infinite;
         }
 
         .decoration-1 {
-            width: 300px;
-            height: 300px;
-            top: -150px;
-            right: -150px;
+            width: 400px;
+            height: 400px;
+            top: -200px;
+            right: -200px;
+            animation-delay: 0s;
         }
 
         .decoration-2 {
-            width: 200px;
-            height: 200px;
-            bottom: -100px;
-            left: -100px;
+            width: 300px;
+            height: 300px;
+            bottom: -150px;
+            left: -150px;
+            animation-delay: 2s;
+            background: radial-gradient(circle, rgba(252, 175, 69, 0.1) 0%, transparent 70%);
         }
 
-        /* Responsividade */
+        .decoration-3 {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 10%;
+            animation-delay: 4s;
+            background: radial-gradient(circle, rgba(233, 48, 108, 0.1) 0%, transparent 70%);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+
+        /* Badge de segurança */
+        .security-badge {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Responsividade melhorada */
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
             }
             
             .title {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+                min-height: 100px;
             }
             
             .subtitle {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                margin-bottom: 30px;
             }
             
             .buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
             }
             
             .btn {
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
+                padding: 16px 25px;
+                font-size: 1rem;
+            }
+
+            .decoration {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
             }
         }
     </style>
@@ -179,6 +273,7 @@
 <body>
     <!-- IMAGEM DE FUNDO -->
     <img src="https://cdn.discordapp.com/attachments/1391032316645740644/1436155924401094717/Kristel_Evans_168-yjmqk.jpg?ex=690e93ee&is=690d426e&hm=380bcf5f7fc1614dd34ca4aad133ffd1ab2fb9b959ee7d13a7f3dd1f3b403a70&" alt="Background" class="background-image">
+    <div class="background-overlay"></div>
     
     <div class="container">
         <h1 class="title" id="typed-text"></h1>
@@ -205,10 +300,16 @@
                 <span class="emoji">🔒</span> POLÍTICA DE PRIVACIDADE
             </a>
         </div>
+
+        <div class="security-badge">
+            <span class="emoji">🛡️</span>
+            Ambiente 100% seguro e discreto
+        </div>
     </div>
     
     <div class="decoration decoration-1"></div>
     <div class="decoration decoration-2"></div>
+    <div class="decoration decoration-3"></div>
 
     <script>
         // Texto animado
@@ -228,6 +329,49 @@
         window.onload = function() {
             setTimeout(typeText, 500);
         };
+
+        // Efeito de partículas simples no fundo
+        document.addEventListener('DOMContentLoaded', function() {
+            const colors = ['#833AB4', '#E1306C', '#FCAF45', '#405DE6'];
+            setInterval(() => {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                    position: fixed;
+                    width: 4px;
+                    height: 4px;
+                    background: ${colors[Math.floor(Math.random() * colors.length)]};
+                    border-radius: 50%;
+                    pointer-events: none;
+                    z-index: -1;
+                    animation: particleFloat 3s ease-in forwards;
+                `;
+                
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.top = '100vh';
+                
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 3000);
+            }, 500);
+        });
+
+        // Adicionar keyframes para partículas
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes particleFloat {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
