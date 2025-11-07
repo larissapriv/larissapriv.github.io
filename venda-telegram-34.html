@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Confirmada - Telegram R$34,90</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '695432253180379');
+    
+    // MARCA VENDA COM VALOR R$34,90
+    fbq('track', 'Purchase', {
+        value: 34.90,
+        currency: 'BRL',
+        content_name: 'Plano Telegram R$34,90',
+        content_category: 'Conteúdo VIP'
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=695432253180379&ev=Purchase&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* IMAGEM DE FUNDO - EDITÁVEL */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 0.4;
+            filter: blur(2px) brightness(0.6);
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                45deg,
+                rgba(0, 136, 204, 0.3) 0%,
+                rgba(0, 102, 153, 0.3) 50%,
+                rgba(0, 68, 102, 0.3) 100%
+            );
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(45deg, #0088CC, #006699);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .price {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #0088CC;
+            margin: 10px 0;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #e0e0e0;
+        }
+
+        .loading {
+            margin-top: 30px;
+        }
+
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #0088CC;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .countdown {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
+        /* Efeitos decorativos */
+        .floating-stars {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: floatStars 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatStars {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .price {
+                font-size: 2.2rem;
+            }
+            
+            .emoji {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- IMAGEM DE FUNDO - TROQUE O LINK AQUI -->
+    <img src="https://cdn.discordapp.com/attachments/1391032316645740644/1436156020870352956/Kristel_Evans_119-qiqvt.jpg?ex=690f3cc5&is=690deb45&hm=ce9bb42cef21afb24b8c499edee5079f48c5071189a811f3c891a6c3014aa432&" alt="Background" class="background-image">
+    <div class="background-overlay"></div>
+    
+    <!-- Estrelas flutuantes -->
+    <div class="floating-stars" style="left: 15%; animation-delay: 0s;">💙</div>
+    <div class="floating-stars" style="left: 25%; animation-delay: 1s;">✨</div>
+    <div class="floating-stars" style="left: 35%; animation-delay: 2s;">🔥</div>
+    <div class="floating-stars" style="left: 45%; animation-delay: 3s;">💎</div>
+    <div class="floating-stars" style="left: 55%; animation-delay: 4s;">🎯</div>
+    <div class="floating-stars" style="left: 65%; animation-delay: 5s;">💙</div>
+    
+    <div class="container">
+        <div class="emoji">💙</div>
+        <h1>VENDA CONFIRMADA!</h1>
+        <div class="price">R$ 34,90</div>
+        <p><strong>Plano Telegram</strong></p>
+        <p>Obrigada pela sua compra! 🎉</p>
+        <p>Seu conteúdo exclusivo está sendo preparado.</p>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p class="countdown">Redirecionando para o Telegram em <span id="countdown">3</span> segundos...</p>
+        </div>
+    </div>
+
+    <script>
+        // Contagem regressiva para redirecionamento
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownInterval = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'https://t.me/ocultolari_bot';
+            }
+        }, 1000);
+
+        // Criar mais estrelas flutuantes
+        function createFloatingStars() {
+            const stars = ['💙', '✨', '🔥', '💎', '🎯', '⭐', '🌟'];
+            const star = document.createElement('div');
+            star.className = 'floating-stars';
+            star.textContent = stars[Math.floor(Math.random() * stars.length)];
+            star.style.left = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 6 + 's';
+            document.body.appendChild(star);
+            
+            // Remove após animação
+            setTimeout(() => {
+                star.remove();
+            }, 6000);
+        }
+        
+        // Criar estrelas a cada segundo
+        setInterval(createFloatingStars, 1000);
+    </script>
+</body>
+</html>
