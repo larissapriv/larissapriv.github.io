@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Confirmada - WhatsApp</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '695432253180379');
+    
+    // MARCA VENDA SEM VALOR ESPECÍFICO
+    fbq('track', 'Purchase', {
+        currency: 'BRL',
+        content_name: 'Venda WhatsApp',
+        content_category: 'Conteúdo VIP'
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=695432253180379&ev=Purchase&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* IMAGEM DE FUNDO - EDITÁVEL */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 0.4;
+            filter: blur(2px) brightness(0.6);
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                45deg,
+                rgba(131, 58, 180, 0.3) 0%,
+                rgba(253, 29, 29, 0.3) 50%,
+                rgba(252, 175, 69, 0.3) 100%
+            );
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #e0e0e0;
+        }
+
+        .highlight {
+            color: #25D366;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .loading {
+            margin-top: 30px;
+        }
+
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #25D366;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .countdown {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
+        /* Efeitos decorativos */
+        .floating-hearts {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: floatHearts 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .emoji {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- IMAGEM DE FUNDO - TROQUE O LINK AQUI -->
+    <img src="https://cdn.discordapp.com/attachments/1391032316645740644/1436156020870352956/Kristel_Evans_119-qiqvt.jpg?ex=690f3cc5&is=690deb45&hm=ce9bb42cef21afb24b8c499edee5079f48c5071189a811f3c891a6c3014aa432&" alt="Background" class="background-image">
+    <div class="background-overlay"></div>
+    
+    <!-- Corações flutuantes -->
+    <div class="floating-hearts" style="left: 10%; animation-delay: 0s;">💚</div>
+    <div class="floating-hearts" style="left: 20%; animation-delay: 1s;">💋</div>
+    <div class="floating-hearts" style="left: 30%; animation-delay: 2s;">✨</div>
+    <div class="floating-hearts" style="left: 40%; animation-delay: 3s;">🔥</div>
+    <div class="floating-hearts" style="left: 50%; animation-delay: 4s;">🎉</div>
+    <div class="floating-hearts" style="left: 60%; animation-delay: 5s;">💚</div>
+    
+    <div class="container">
+        <div class="emoji">💚</div>
+        <h1>VENDA CONFIRMADA!</h1>
+        <p><span class="highlight">WhatsApp VIP</span></p>
+        <p>Obrigada pela sua confiança! 💋</p>
+        <p>Seu conteúdo exclusivo está sendo preparado com carinho.</p>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p class="countdown">Redirecionando para o WhatsApp em <span id="countdown">3</span> segundos...</p>
+        </div>
+    </div>
+
+    <script>
+        // Contagem regressiva para redirecionamento
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownInterval = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'https://typebot.co/privilari';
+            }
+        }, 1000);
+
+        // Criar mais corações flutuantes
+        function createFloatingHearts() {
+            const hearts = ['💚', '💋', '✨', '🔥', '🎉', '💎', '🫦'];
+            const heart = document.createElement('div');
+            heart.className = 'floating-hearts';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDelay = Math.random() * 6 + 's';
+            document.body.appendChild(heart);
+            
+            // Remove após animação
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        
+        // Criar corações a cada segundo
+        setInterval(createFloatingHearts, 1000);
+    </script>
+</body>
+</html>
