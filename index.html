@@ -291,6 +291,16 @@
             position: relative;
         }
 
+        /* BOTÃO WHATSAPP VIP */
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E, #075E54);
+            color: white;
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+            border: 2px solid #25D366;
+            font-weight: 700;
+            position: relative;
+        }
+
         /* Badge de promoção no botão */
         .promo-badge {
             position: absolute;
@@ -324,6 +334,10 @@
         .btn:hover {
             transform: translateY(-8px) scale(1.03);
             box-shadow: 0 20px 40px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
         }
 
         .btn:active {
@@ -611,6 +625,11 @@
                 <span class="emoji">💎</span> TELEGRAM 50% OFF
             </a>
             
+            <!-- NOVO BOTÃO WHATSAPP VIP -->
+            <a href="https://typebot.co/larivendaswpp" class="btn btn-whatsapp" id="whatsapp-btn">
+                <span class="emoji">💬</span> WHATSAPP VIP
+            </a>
+            
             <!-- BOTÃO SECUNDÁRIO - PRÉVIAS GRÁTIS -->
             <a href="https://t.me/+VblyB0TgO0pmMDMx" class="btn btn-secondary">
                 <span class="emoji">🎁</span> PRÉVIAS GRÁTIS
@@ -645,6 +664,14 @@
             document.getElementById('telegram-btn').addEventListener('click', function() {
                 fbq('track', 'Lead', {
                     content_name: 'Telegram 50% OFF', 
+                    content_category: 'Premium Access'
+                });
+            });
+            
+            // BOTÃO WHATSAPP - Marcar Lead
+            document.getElementById('whatsapp-btn').addEventListener('click', function() {
+                fbq('track', 'Lead', {
+                    content_name: 'WhatsApp VIP', 
                     content_category: 'Premium Access'
                 });
             });
