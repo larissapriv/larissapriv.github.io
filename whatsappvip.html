@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp VIP - Larissa Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --threads-black: #000000;
+            --threads-white: #ffffff;
+            --threads-gray: rgba(28, 28, 30, 0.7);
+            --threads-light-gray: rgba(44, 44, 46, 0.8);
+            --threads-pink: #ff4d8d;
+            --threads-purple: #8a3ab9;
+            --threads-blue: #4a69e2;
+            --instagram-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://cdn.discordapp.com/attachments/1391032316645740644/1437868202850910228/Kristel_Evans_048-joreo.jpg?ex=6914ce9d&is=69137d1d&hm=34e183c7908b3f6f4136764061a47827ef392b95d57352a57e7fcc01b242eade&');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--threads-white);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            background: var(--instagram-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: var(--instagram-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .emoji-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .emoji {
+            font-size: 2.5rem;
+            animation: float 3s ease-in-out infinite;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .emoji:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .emoji:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        .benefit-card {
+            background: var(--threads-gray);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            background: var(--threads-light-gray);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .benefit-icon {
+            font-size: 2.2rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .benefit-content {
+            flex: 1;
+        }
+
+        .benefit-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--threads-white);
+        }
+
+        .benefit-description {
+            font-size: 0.95rem;
+            color: #d0d0d0;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .cta-button {
+            background: var(--instagram-gradient);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 300px;
+            justify-content: center;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(220, 39, 67, 0.6);
+        }
+
+        .exclusivity-section {
+            margin: 50px auto;
+            padding: 30px;
+            background: var(--threads-gray);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .exclusivity-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            background: var(--instagram-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .exclusivity-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #f0f0f0;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--threads-light-gray);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--instagram-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #d0d0d0;
+            margin-top: 5px;
+        }
+
+        .floating-emojis {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-emoji {
+            position: absolute;
+            font-size: 1.8rem;
+            opacity: 0.2;
+            animation: floatAround 20s linear infinite;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes floatAround {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(100px, 100px) rotate(90deg);
+            }
+            50% {
+                transform: translate(200px, 0) rotate(180deg);
+            }
+            75% {
+                transform: translate(100px, -100px) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #d0d0d0;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 30px;
+        }
+
+        .social-proof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+
+        .avatars {
+            display: flex;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.5);
+            margin-left: -10px;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .avatar:first-child {
+            margin-left: 0;
+        }
+
+        .brand {
+            font-size: 0.8rem;
+            color: #ff6b9d;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .logo {
+                font-size: 2.8rem;
+            }
+            
+            .benefit-card {
+                padding: 15px;
+            }
+            
+            .exclusivity-section {
+                padding: 20px;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-emojis" id="floating-emojis"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h1>WHATSAPP VIP</h1>
+            <p class="subtitle">Conteúdo exclusivo • Experiência premium • Acesso limitado</p>
+            <div class="brand">privadolarissa.site</div>
+            
+            <div class="emoji-container">
+                <div class="emoji">🔥</div>
+                <div class="emoji">💎</div>
+                <div class="emoji">✨</div>
+            </div>
+        </header>
+        
+        <div class="social-proof">
+            <div class="avatars">
+                <div class="avatar">A</div>
+                <div class="avatar">B</div>
+                <div class="avatar">C</div>
+                <div class="avatar">+52</div>
+            </div>
+            <span>+200 membros já fazem parte</span>
+        </div>
+        
+        <section class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">🔞</div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Conteúdo Exclusivo</h3>
+                    <p class="benefit-description">Fotos e vídeos sensuais sem censura que você não encontra em nenhum outro lugar.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">💬</div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Conversas Diretas</h3>
+                    <p class="benefit-description">Interações pessoais e conteúdo personalizado apenas para VIPs.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">🎁</div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Conteúdo Bônus</h3>
+                    <p class="benefit-description">Presentes exclusivos e materiais extras para membros selecionados.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Conteúdos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Disponível</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Avaliação</span>
+            </div>
+        </div>
+        
+        <section class="cta-section">
+            <button class="cta-button" id="cta-button">
+                <i class="fab fa-whatsapp"></i> VER AGORA
+            </button>
+        </section>
+        
+        <section class="exclusivity-section">
+            <h2 class="exclusivity-title">Acesso Exclusivo</h2>
+            <p class="exclusivity-text">
+                🔐 Minha comunidade VIP é limitada e cuidadosamente selecionada. Garanto uma experiência íntima e personalizada para cada membro.
+            </p>
+            <p class="exclusivity-text">
+                💎 Conteúdos premium que não estão disponíveis publicamente, com interações diretas e uma experiência completamente nova no WhatsApp.
+            </p>
+            <p class="exclusivity-text">
+                ⚡ Vagas limitadas! Não perca esta oportunidade única de fazer parte do grupo mais exclusivo.
+            </p>
+        </section>
+        
+        <footer>
+            <p>© 2023 WhatsApp VIP • privadolarissa.site</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #c0c0c0;">Conteúdo para maiores de 18 anos</p>
+        </footer>
+    </div>
+
+    <script>
+        // Adicione emojis flutuantes
+        const emojis = ['🔥', '💎', '✨', '❤️', '👑', '🌟', '💫', '🥵', '💋', '💦'];
+        const floatingContainer = document.getElementById('floating-emojis');
+        
+        for (let i = 0; i < 25; i++) {
+            const emoji = document.createElement('div');
+            emoji.className = 'floating-emoji';
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = `${Math.random() * 100}%`;
+            emoji.style.top = `${Math.random() * 100}%`;
+            emoji.style.animationDuration = `${15 + Math.random() * 25}s`;
+            emoji.style.animationDelay = `${Math.random() * 5}s`;
+            floatingContainer.appendChild(emoji);
+        }
+        
+        // Redirecionamento para o WhatsApp
+        document.getElementById('cta-button').addEventListener('click', function() {
+            // Link do WhatsApp fornecido
+            const whatsappLink = "https://typebot.co/whatsvip";
+            window.open(whatsappLink, '_blank');
+            
+            // Efeito de clique
+            this.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                this.style.transform = "scale(1)";
+            }, 150);
+            
+            // Tracking simples (opcional)
+            console.log('Lead redirecionado para WhatsApp VIP - privadolarissa.site');
+        });
+
+        // Analytics simples (opcional)
+        console.log('Página WhatsApp VIP carregada - privadolarissa.site');
+    </script>
+</body>
+</html>
