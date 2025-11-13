@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiência VIP Exclusiva - Larissa</title>
-    <meta name="description" content="Conteúdo sensual premium. Experiência única e exclusiva para adultos.">
-    <meta name="keywords" content="conteúdo premium, sensual, exclusivo, vip, experiência única">
-    <meta property="og:title" content="Experiência VIP Exclusiva - Larissa">
-    <meta property="og:description" content="Conteúdo sofisticado e exclusivo para momentos de prazer">
+    <title>Larissa - Sua musa exclusiva</title>
+    <meta name="description" content="Conteúdo ousado e personalizado para te deixar com vontade de mais">
+    <meta property="og:title" content="Larissa - Sua musa exclusiva">
+    <meta property="og:description" content="Conteúdo ousado e personalizado para te deixar com vontade de mais">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -32,31 +31,34 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Playfair Display', 'Georgia', serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
         body {
-            background: #000000;
-            color: #f0e6d2;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #0c0c0c 100%);
+            color: #ffffff;
             min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
             position: relative;
             overflow-x: hidden;
         }
 
-        /* Imagem de Fundo FIXA - OTIMIZADA */
         .background-image {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://cdn.discordapp.com/attachments/1391032316645740644/1436156020870352956/Kristel_Evans_119-qiqvt.jpg?ex=6911dfc5&is=69108e45&hm=75bf90c81dd47bf62012718cbc5243b9904394ce146421dfaeb8063ab4325c82&');
+            background-image: url('https://cdn.discordapp.com/attachments/1391032316645740644/1437868202850910228/Kristel_Evans_048-joreo.jpg?ex=6917719d&is=6916201d&hm=4256d173735a62c7dbfc3ff4400b5cc1e9eec1e385dbc9886882fbc54d95f728&');
             background-size: cover;
             background-position: center center;
-            background-attachment: fixed;
             background-repeat: no-repeat;
             z-index: -2;
-            opacity: 0.4;
+            opacity: 0.7; /* AUMENTEI A VISIBILIDADE */
+            filter: brightness(0.9) contrast(1.1);
         }
 
         .overlay {
@@ -67,203 +69,125 @@
             height: 100%;
             background: linear-gradient(
                 135deg,
-                rgba(0, 0, 0, 0.85) 0%,
-                rgba(20, 20, 20, 0.75) 50%,
-                rgba(0, 0, 0, 0.9) 100%
+                rgba(20, 20, 20, 0.7) 0%,    /* REDUZI A OPACIDADE */
+                rgba(40, 40, 40, 0.5) 50%,   /* REDUZI A OPACIDADE */
+                rgba(20, 20, 20, 0.7) 100%   /* REDUZI A OPACIDADE */
             );
             z-index: -1;
-        }
-
-        .gold-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                45deg,
-                transparent 0%,
-                rgba(212, 175, 55, 0.08) 50%,
-                transparent 100%
-            );
-            z-index: -1;
-            pointer-events: none;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 500px;
+            width: 100%;
             text-align: center;
-            padding: 80px 30px;
             position: relative;
             z-index: 1;
-            margin: 0 auto;
         }
 
-        .title {
-            font-size: 3.8rem;
-            margin-bottom: 30px;
-            background: linear-gradient(45deg, #D4AF37, #FFD700, #F0E6D2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 700;
-            line-height: 1.1;
-            text-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-            min-height: 140px;
+        .profile-section {
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 140px; /* AUMENTEI UM POUCO */
+            height: 140px; /* AUMENTEI UM POUCO */
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(255, 105, 180, 0.3); /* GLOW ROSA */
+            overflow: hidden;
             display: flex;
-            justify-content: center;
             align-items: center;
-            letter-spacing: 1px;
-        }
-
-        .typed-text {
-            border-right: 3px solid #D4AF37;
-            padding-right: 5px;
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { border-color: #D4AF37; }
-            50% { border-color: transparent; }
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-            color: #f0e6d2;
-            line-height: 1.7;
-            font-weight: 300;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-
-        /* Badge de Oferta Especial */
-        .special-offer {
-            background: linear-gradient(45deg, #D4AF37, #FFD700, #F0E6D2);
-            color: #000;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            display: inline-block;
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
-            animation: pulse 2s infinite;
-            border: 2px solid #D4AF37;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .special-offer::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
-            transform: rotate(45deg);
-            animation: shine 3s infinite;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) rotate(45deg); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4); }
-            50% { transform: scale(1.05); box-shadow: 0 12px 35px rgba(212, 175, 55, 0.6); }
-        }
-
-        /* Benefícios */
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .benefit {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(0, 0, 0, 0.3));
-            padding: 25px 20px;
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            position: relative;
-            overflow: hidden;
+            justify-content: center;
             transition: all 0.3s ease;
         }
 
-        .benefit::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 
+                0 12px 40px rgba(0, 0, 0, 0.6),
+                0 0 40px rgba(255, 105, 180, 0.5);
+        }
+
+        .profile-image img {
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
-            transition: left 0.5s;
+            object-fit: cover;
+            object-position: center;
         }
 
-        .benefit:hover::before {
-            left: 100%;
+        .name {
+            font-size: 2.4rem; /* AUMENTEI UM POUCO */
+            font-weight: 300;
+            margin-bottom: 12px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
-        .benefit:hover {
-            transform: translateY(-5px);
-            border-color: rgba(212, 175, 55, 0.6);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
-        }
-
-        .benefit-emoji {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-            display: block;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-        }
-
-        .benefit-text {
-            font-size: 1rem;
-            font-weight: 500;
+        .tagline {
+            font-size: 1.2rem; /* AUMENTEI UM POUCO */
+            color: #ffb6c1; /* ROSA SUAVE */
+            margin-bottom: 10px;
             line-height: 1.5;
-            color: #f0e6d2;
+            font-weight: 400;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            font-size: 1.1rem; /* AUMENTEI UM POUCO */
+            color: #e6e6fa; /* LAVANDA SUAVE */
+            line-height: 1.6;
+            margin-bottom: 35px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.4), transparent);
+            margin: 35px 0;
+        }
+
+        .cta-section {
+            margin-bottom: 35px;
+        }
+
+        .cta-text {
+            font-size: 1.2rem; /* AUMENTEI UM POUCO */
+            color: #ffb6c1; /* ROSA SUAVE */
+            margin-bottom: 30px;
+            line-height: 1.5;
+            font-weight: 300;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         .buttons {
             display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            position: relative;
+            flex-direction: column;
+            gap: 18px; /* AUMENTEI O ESPAÇAMENTO */
+            margin-bottom: 35px;
         }
 
         .btn {
-            padding: 22px 45px;
-            font-size: 1.3rem;
+            padding: 20px 35px; /* AUMENTEI O PADDING */
+            font-size: 1.2rem; /* AUMENTEI A FONTE */
             border: none;
-            border-radius: 15px;
+            border-radius: 15px; /* BORDAS MAIS ARREDONDADAS */
             cursor: pointer;
-            transition: all 0.4s ease;
-            font-weight: 600;
+            transition: all 0.3s ease;
+            font-weight: 500;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 15px; /* AUMENTEI O ESPAÇAMENTO */
             text-decoration: none;
-            min-width: 300px;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.9), rgba(255, 215, 0, 0.8));
-            color: #000;
-            border: 2px solid #D4AF37;
         }
 
         .btn::before {
@@ -273,7 +197,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
             transition: left 0.5s;
         }
 
@@ -281,205 +205,118 @@
             left: 100%;
         }
 
-        /* BOTÃO PRINCIPAL - TELEGRAM COM DESCONTO */
-        .btn-primary {
-            background: linear-gradient(135deg, #D4AF37, #FFD700, #F0E6D2);
-            color: #000;
-            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
-            border: 2px solid #D4AF37;
-            font-weight: 700;
-            position: relative;
-        }
-
-        /* BOTÃO WHATSAPP VIP */
         .btn-whatsapp {
-            background: linear-gradient(135deg, #25D366, #128C7E, #075E54);
+            background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
-            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
-            border: 2px solid #25D366;
-            font-weight: 700;
-            position: relative;
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
         }
 
-        /* Badge de promoção no botão */
-        .promo-badge {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: linear-gradient(45deg, #ff0000, #ff6b6b);
+        .btn-telegram {
+            background: linear-gradient(135deg, #0088cc, #005580);
             color: white;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            animation: bounce 2s infinite;
-            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
-            z-index: 2;
-            border: 2px solid white;
+            box-shadow: 0 6px 25px rgba(0, 136, 204, 0.4);
         }
 
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
-
-        /* BOTÃO SECUNDÁRIO - PRÉVIAS GRÁTIS */
-        .btn-secondary {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(40, 40, 40, 0.9));
-            color: #D4AF37;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-            border: 2px solid #D4AF37;
+        .btn-preview {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffb6c1; /* ROSA SUAVE */
+            border: 1px solid rgba(255, 182, 193, 0.3);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         .btn:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
         }
 
         .btn-whatsapp:hover {
-            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
         }
 
-        .btn:active {
-            transform: translateY(-4px) scale(1.01);
+        .btn-telegram:hover {
+            box-shadow: 0 12px 35px rgba(0, 136, 204, 0.6);
+        }
+
+        .btn-preview:hover {
+            background: rgba(255, 182, 193, 0.1);
+            border-color: rgba(255, 182, 193, 0.5);
+        }
+
+        .discount-badge {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 5px 14px; /* AUMENTEI O PADDING */
+            border-radius: 20px;
+            font-size: 0.85rem; /* AUMENTEI A FONTE */
+            font-weight: 600;
+            margin-left: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); } /* AUMENTEI O EFEITO */
         }
 
         .emoji {
-            font-size: 1.5rem;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+            font-size: 1.3rem; /* AUMENTEI UM POUCO */
         }
 
-        .security-badge {
-            margin-top: 40px;
-            font-size: 1rem;
-            color: #b8a87c;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding-bottom: 60px;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        .footer-text {
+            font-size: 0.95rem; /* AUMENTEI UM POUCO */
+            color: #b0b0b0;
+            line-height: 1.5;
         }
 
-        .guarantee {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(0, 0, 0, 0.3));
-            border: 1px solid #D4AF37;
-            padding: 20px;
-            border-radius: 15px;
-            margin: 30px 0;
-            font-size: 1rem;
-            color: #f0e6d2;
-            position: relative;
-            overflow: hidden;
+        .highlight {
+            color: #ffb6c1; /* ROSA SUAVE */
+            font-weight: 500;
         }
 
-        .guarantee::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(212, 175, 55, 0.1), transparent);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0%, 100% { transform: translateX(-100%); }
-            50% { transform: translateX(100%); }
-        }
-
-        /* Novos benefícios especiais */
-        .special-benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .special-benefit {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(212, 175, 55, 0.1));
-            padding: 20px;
-            border-radius: 15px;
-            border: 1px solid rgba(212, 175, 55, 0.4);
-            text-align: center;
-        }
-
-        .special-benefit-emoji {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .special-benefit-text {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #f0e6d2;
-        }
-
-        /* Efeitos de brilho dourado */
-        .gold-glow {
+        /* Efeitos de brilho sensual */
+        .glow {
             position: fixed;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
+            width: 400px; /* AUMENTEI */
+            height: 400px; /* AUMENTEI */
+            background: radial-gradient(circle, rgba(255, 182, 193, 0.15) 0%, transparent 70%);
             border-radius: 50%;
-            filter: blur(40px);
-            animation: float 10s ease-in-out infinite;
+            filter: blur(50px); /* AUMENTEI O BLUR */
+            animation: float 15s ease-in-out infinite;
             z-index: 0;
             pointer-events: none;
         }
 
-        .gold-glow-1 {
-            top: 15%;
-            left: 15%;
+        .glow-1 {
+            top: 10%;
+            left: 10%;
             animation-delay: 0s;
         }
 
-        .gold-glow-2 {
-            bottom: 15%;
-            right: 15%;
-            animation-delay: 5s;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+        .glow-2 {
+            bottom: 10%;
+            right: 10%;
+            animation-delay: 7.5s;
+            background: radial-gradient(circle, rgba(147, 112, 219, 0.15) 0%, transparent 70%);
         }
 
-        .gold-glow-3 {
+        .glow-3 {
             top: 60%;
-            left: 8%;
-            animation-delay: 2.5s;
-            background: radial-gradient(circle, rgba(240, 230, 210, 0.1) 0%, transparent 70%);
+            left: 5%;
+            animation-delay: 3s;
+            background: radial-gradient(circle, rgba(255, 105, 180, 0.1) 0%, transparent 70%);
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
-            33% { transform: translateY(-30px) scale(1.15) rotate(120deg); }
+            33% { transform: translateY(-25px) scale(1.15) rotate(120deg); }
             66% { transform: translateY(15px) scale(0.9) rotate(240deg); }
         }
 
-        /* Elementos decorativos dourados */
-        .gold-border {
-            position: absolute;
-            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
-            height: 1px;
-            width: 80%;
-            left: 10%;
-        }
-
-        .border-top {
-            top: 0;
-        }
-
-        .border-bottom {
-            bottom: 0;
-        }
-
-        /* Efeitos de partículas douradas */
-        .gold-particle {
+        /* Partículas sensuais */
+        .particle {
             position: fixed;
-            background: radial-gradient(circle, #D4AF37, transparent);
+            background: radial-gradient(circle, rgba(255, 182, 193, 0.6), transparent);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
@@ -488,220 +325,179 @@
 
         @media (max-width: 768px) {
             .container {
-                padding: 50px 20px;
+                max-width: 400px;
             }
             
-            .title {
-                font-size: 2.8rem;
-                min-height: 120px;
+            .profile-image {
+                width: 120px;
+                height: 120px;
             }
             
-            .subtitle {
-                font-size: 1.3rem;
-                margin-bottom: 30px;
+            .name {
+                font-size: 2rem;
             }
             
-            .benefits, .special-benefits {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 25px;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 320px;
-                padding: 20px 35px;
-                font-size: 1.2rem;
-                min-width: auto;
-            }
-
-            .promo-badge {
-                font-size: 0.7rem;
-                padding: 6px 10px;
-                top: -8px;
-                right: -8px;
-            }
-
-            .gold-glow {
-                display: none;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .title {
-                font-size: 2.2rem;
-            }
-            
-            .subtitle {
+            .tagline {
                 font-size: 1.1rem;
+            }
+            
+            .description {
+                font-size: 1rem;
             }
             
             .btn {
                 padding: 18px 30px;
                 font-size: 1.1rem;
             }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 320px;
+            }
             
-            .special-offer {
-                font-size: 1.1rem;
-                padding: 12px 25px;
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .name {
+                font-size: 1.8rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .description {
+                font-size: 0.9rem;
+            }
+            
+            .btn {
+                padding: 16px 25px;
+                font-size: 1rem;
+            }
+            
+            .discount-badge {
+                font-size: 0.8rem;
+                padding: 4px 10px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- IMAGEM DE FUNDO FIXA - OTIMIZADA -->
+    <!-- IMAGEM DE FUNDO MAIS VISÍVEL -->
     <div class="background-image"></div>
     <div class="overlay"></div>
-    <div class="gold-overlay"></div>
     
-    <!-- Efeitos de brilho dourado FIXOS -->
-    <div class="gold-glow gold-glow-1"></div>
-    <div class="gold-glow gold-glow-2"></div>
-    <div class="gold-glow gold-glow-3"></div>
+    <!-- Efeitos de brilho sensual -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
     
     <div class="container">
-        <div class="gold-border border-top"></div>
-        
-        <h1 class="title" id="typed-text"></h1>
-        
-        <div class="special-offer">
-            🎁 SORTEIOS EXCLUSIVOS: PIX + NOITE COMIGO + MUITO MAIS!
-        </div>
-        
-        <p class="subtitle">
-            Conteúdo sofisticado e exclusivo para momentos de prazer refinado. 
-            Entre para o VIP e concorra a experiências únicas Comigo! 
-            🌹✨🎯
-        </p>
-
-        <!-- Novos benefícios especiais -->
-        <div class="special-benefits">
-            <div class="special-benefit">
-                <span class="special-benefit-emoji">💝</span>
-                <div class="special-benefit-text">SORTEIO PIX R$500 TODO MÊS</div>
+        <!-- Seção do Perfil -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="https://cdn.discordapp.com/attachments/1391032316645740644/1436155673523261501/Kristel_Evans_096-wjjrc.jpg?ex=69172573&is=6915d3f3&hm=ec16fea4f9eab20b6840da96e10c13112224ddf5251314ed7aa0532631935048&" alt="Larissa">
             </div>
-            <div class="special-benefit">
-                <span class="special-benefit-emoji">🌙</span>
-                <div class="special-benefit-text">NOITE COMIGO COM TUDO PAGO</div>
-            </div>
-            <div class="special-benefit">
-                <span class="special-benefit-emoji">📞</span>
-                <div class="special-benefit-text">CHAMADA DE VÍDEO EXCLUSIVA</div>
-            </div>
+            <h1 class="name">Larissa</h1>
+            <p class="tagline">Sua musa exclusiva.</p>
+            <p class="description">
+                ● Conteúdo ousado e personalizado para te deixar com vontade de mais.
+            </p>
         </div>
 
-        <div class="benefits">
-            <div class="benefit">
-                <span class="benefit-emoji">💫</span>
-                <div class="benefit-text">Conteúdo Premium Exclusivo</div>
-            </div>
-            <div class="benefit">
-                <span class="benefit-emoji">🎭</span>
-                <div class="benefit-text">Experiências Particular Únicas</div>
-            </div>
-            <div class="benefit">
-                <span class="benefit-emoji">🔮</span>
-                <div class="benefit-text">Atenção Personalizada</div>
-            </div>
-            <div class="benefit">
-                <span class="benefit-emoji">⚜️</span>
-                <div class="benefit-text">Participação em Sorteios</div>
+        <div class="divider"></div>
+
+        <!-- Seção de Chamada para Ação -->
+        <div class="cta-section">
+            <p class="cta-text">
+                Vem ver o que preparei pra você.<br>
+                O link é o paraíso.
+            </p>
+
+            <div class="buttons">
+                <!-- Botão WhatsApp -->
+                <a href="https://typebot.co/laripriv" class="btn btn-whatsapp" id="whatsapp-btn">
+                    <span class="emoji">💬</span>
+                    Ver pacote disponível zap
+                </a>
+
+                <!-- Botão Telegram -->
+                <a href="https://teleg.one/ocultolari_bot" class="btn btn-telegram" id="telegram-btn">
+                    <span class="emoji">📱</span>
+                    Telegram
+                    <span class="discount-badge">40% OFF</span>
+                </a>
+
+                <!-- Botão Prévia -->
+                <a href="https://t.me/+VblyB0TgO0pmMDMx" class="btn btn-preview">
+                    <span class="emoji">👀</span>
+                    Ver prévia grátis
+                </a>
             </div>
         </div>
 
-        <div class="guarantee">
-            ⚜️ <strong>EXPERIÊNCIA COMPLETA:</strong> Conteúdo + Sorteios + Atenção Exclusiva!
+        <div class="footer-text">
+            Ambiente <span class="highlight">100% discreto</span> • 
+            Conteúdo <span class="highlight">exclusivo</span>
         </div>
-        
-        <div class="buttons">
-            <!-- BOTÃO PRINCIPAL - TELEGRAM COM DESCONTO -->
-            <a href="https://teleg.one/ocultolari_bot" class="btn btn-primary" id="telegram-btn">
-                <span class="promo-badge">POR TEMPO LIMITADO</span>
-                <span class="emoji">💎</span> TELEGRAM 50% OFF
-            </a>
-            
-            <!-- NOVO BOTÃO WHATSAPP VIP -->
-            <a href="https://typebot.co/laripriv" class="btn btn-whatsapp" id="whatsapp-btn">
-                <span class="emoji">💬</span> WHATSAPP VIP
-            </a>
-            
-            <!-- BOTÃO SECUNDÁRIO - PRÉVIAS GRÁTIS -->
-            <a href="https://t.me/+VblyB0TgO0pmMDMx" class="btn btn-secondary">
-                <span class="emoji">🎁</span> PRÉVIAS GRÁTIS
-            </a>
-        </div>
-
-        <div class="security-badge">
-            <span class="emoji">🛡️</span>
-            Ambiente discreto e seguro • Privacidade total garantida
-        </div>
-        
-        <div class="gold-border border-bottom"></div>
     </div>
 
     <script>
-        // Texto animado
-        const typedTextElement = document.getElementById('typed-text');
-        const textToType = "Experiência VIP Exclusiva...";
-        let index = 0;
-        
-        function typeText() {
-            if (index < textToType.length) {
-                typedTextElement.innerHTML = textToType.substring(0, index + 1) + '<span class="typed-text"></span>';
-                index++;
-                setTimeout(typeText, 120);
-            }
-        }
-
         // RASTREAMENTO DE EVENTOS
         document.addEventListener('DOMContentLoaded', function() {
-            // BOTÃO TELEGRAM - Marcar Lead
-            document.getElementById('telegram-btn').addEventListener('click', function() {
-                fbq('track', 'Lead', {
-                    content_name: 'Telegram 50% OFF', 
-                    content_category: 'Premium Access'
-                });
-            });
-            
-            // BOTÃO WHATSAPP - Marcar Lead
+            // Botão WhatsApp
             document.getElementById('whatsapp-btn').addEventListener('click', function() {
                 fbq('track', 'Lead', {
                     content_name: 'WhatsApp VIP', 
                     content_category: 'Premium Access'
                 });
             });
-        });
-        
-        // Iniciar animação quando a página carregar
-        window.onload = function() {
-            setTimeout(typeText, 800);
-        };
-
-        // Criar partículas douradas
-        function createGoldParticles() {
-            const particle = document.createElement('div');
-            particle.className = 'gold-particle';
             
-            const size = Math.random() * 6 + 2;
+            // Botão Telegram
+            document.getElementById('telegram-btn').addEventListener('click', function() {
+                fbq('track', 'Lead', {
+                    content_name: 'Telegram 40% OFF', 
+                    content_category: 'Premium Access'
+                });
+            });
+        });
+
+        // Efeito de digitação no nome
+        const nameElement = document.querySelector('.name');
+        const originalName = "Larissa";
+        let nameIndex = 0;
+
+        function typeName() {
+            if (nameIndex < originalName.length) {
+                nameElement.textContent = originalName.substring(0, nameIndex + 1);
+                nameIndex++;
+                setTimeout(typeName, 150);
+            }
+        }
+
+        // Criar partículas sensuais
+        function createParticles() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            const size = Math.random() * 8 + 2;
             particle.style.width = size + 'px';
             particle.style.height = size + 'px';
             
             particle.style.left = Math.random() * 100 + 'vw';
             particle.style.top = '100vh';
             
-            // Tons dourados
-            const goldColors = [
-                'rgba(212, 175, 55, 0.8)',
-                'rgba(255, 215, 0, 0.6)', 
-                'rgba(240, 230, 210, 0.7)',
-                'rgba(184, 168, 124, 0.5)'
+            // Tons sensuais
+            const sensualColors = [
+                'rgba(255, 182, 193, 0.7)',
+                'rgba(255, 105, 180, 0.6)', 
+                'rgba(147, 112, 219, 0.5)',
+                'rgba(221, 160, 221, 0.6)'
             ];
-            particle.style.background = goldColors[Math.floor(Math.random() * goldColors.length)];
+            particle.style.background = sensualColors[Math.floor(Math.random() * sensualColors.length)];
             
             document.body.appendChild(particle);
             
@@ -716,7 +512,7 @@
                     opacity: 0
                 }
             ], {
-                duration: Math.random() * 5000 + 4000,
+                duration: Math.random() * 6000 + 4000,
                 easing: 'cubic-bezier(0.1, 0.2, 0.8, 0.9)'
             });
             
@@ -725,27 +521,18 @@
             };
         }
         
-        // Criar partículas a cada 200ms
-        setInterval(createGoldParticles, 200);
+        // Criar partículas a cada 300ms
+        setInterval(createParticles, 300);
 
-        // Rotação de benefícios extras
-        const extraBenefits = [
-            "💝 Sorteio de PIX R$500 todo mês!",
-            "🌙 Noite comigo com tudo pago!",
-            "📞 Chamadas de vídeo exclusivas!",
-            "🎁 Presentes e mimos especiais!",
-            "💎 Conteúdo que ninguém mais tem!"
-        ];
-
-        let benefitIndex = 0;
-        setInterval(() => {
-            document.querySelector('.subtitle').innerHTML = `
-                Conteúdo sofisticado e exclusivo para momentos de prazer refinado. 
-                <strong>${extraBenefits[benefitIndex]}</strong> 
-                🌹✨🎯
-            `;
-            benefitIndex = (benefitIndex + 1) % extraBenefits.length;
-        }, 4000);
+        // Iniciar animações quando a página carregar
+        window.onload = function() {
+            setTimeout(typeName, 500);
+            
+            // Criar algumas partículas iniciais
+            for (let i = 0; i < 15; i++) {
+                setTimeout(createParticles, i * 200);
+            }
+        };
     </script>
 </body>
 </html>
