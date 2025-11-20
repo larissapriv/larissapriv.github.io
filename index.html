@@ -52,12 +52,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://ibb.co/TqgwjFNR');
+            background-image: url('https://i.ibb.co/HpHKwk9Y/Kristel-Evans-048-joreo.jpg');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             z-index: -2;
-            opacity: 0.7; /* AUMENTEI A VISIBILIDADE */
+            opacity: 0.7;
             filter: brightness(0.9) contrast(1.1);
         }
 
@@ -69,9 +69,9 @@
             height: 100%;
             background: linear-gradient(
                 135deg,
-                rgba(20, 20, 20, 0.7) 0%,    /* REDUZI A OPACIDADE */
-                rgba(40, 40, 40, 0.5) 50%,   /* REDUZI A OPACIDADE */
-                rgba(20, 20, 20, 0.7) 100%   /* REDUZI A OPACIDADE */
+                rgba(20, 20, 20, 0.7) 0%,
+                rgba(40, 40, 40, 0.5) 50%,
+                rgba(20, 20, 20, 0.7) 100%
             );
             z-index: -1;
         }
@@ -89,14 +89,14 @@
         }
 
         .profile-image {
-            width: 140px; /* AUMENTEI UM POUCO */
-            height: 140px; /* AUMENTEI UM POUCO */
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             margin: 0 auto 25px;
             border: 3px solid rgba(255, 255, 255, 0.2);
             box-shadow: 
                 0 8px 32px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(255, 105, 180, 0.3); /* GLOW ROSA */
+                0 0 30px rgba(255, 105, 180, 0.3);
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -119,7 +119,7 @@
         }
 
         .name {
-            font-size: 2.4rem; /* AUMENTEI UM POUCO */
+            font-size: 2.4rem;
             font-weight: 300;
             margin-bottom: 12px;
             color: #ffffff;
@@ -128,8 +128,8 @@
         }
 
         .tagline {
-            font-size: 1.2rem; /* AUMENTEI UM POUCO */
-            color: #ffb6c1; /* ROSA SUAVE */
+            font-size: 1.2rem;
+            color: #ffb6c1;
             margin-bottom: 10px;
             line-height: 1.5;
             font-weight: 400;
@@ -137,8 +137,8 @@
         }
 
         .description {
-            font-size: 1.1rem; /* AUMENTEI UM POUCO */
-            color: #e6e6fa; /* LAVANDA SUAVE */
+            font-size: 1.1rem;
+            color: #e6e6fa;
             line-height: 1.6;
             margin-bottom: 35px;
             max-width: 400px;
@@ -158,8 +158,8 @@
         }
 
         .cta-text {
-            font-size: 1.2rem; /* AUMENTEI UM POUCO */
-            color: #ffb6c1; /* ROSA SUAVE */
+            font-size: 1.2rem;
+            color: #ffb6c1;
             margin-bottom: 30px;
             line-height: 1.5;
             font-weight: 300;
@@ -169,22 +169,22 @@
         .buttons {
             display: flex;
             flex-direction: column;
-            gap: 18px; /* AUMENTEI O ESPAÇAMENTO */
+            gap: 18px;
             margin-bottom: 35px;
         }
 
         .btn {
-            padding: 20px 35px; /* AUMENTEI O PADDING */
-            font-size: 1.2rem; /* AUMENTEI A FONTE */
+            padding: 20px 35px;
+            font-size: 1.2rem;
             border: none;
-            border-radius: 15px; /* BORDAS MAIS ARREDONDADAS */
+            border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px; /* AUMENTEI O ESPAÇAMENTO */
+            gap: 15px;
             text-decoration: none;
             position: relative;
             overflow: hidden;
@@ -219,7 +219,7 @@
 
         .btn-preview {
             background: rgba(255, 255, 255, 0.1);
-            color: #ffb6c1; /* ROSA SUAVE */
+            color: #ffb6c1;
             border: 1px solid rgba(255, 182, 193, 0.3);
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
@@ -246,9 +246,9 @@
         .discount-badge {
             background: linear-gradient(135deg, #ff6b6b, #ee5a52);
             color: white;
-            padding: 5px 14px; /* AUMENTEI O PADDING */
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 0.85rem; /* AUMENTEI A FONTE */
+            font-size: 0.85rem;
             font-weight: 600;
             margin-left: 10px;
             animation: pulse 2s infinite;
@@ -256,32 +256,31 @@
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); } /* AUMENTEI O EFEITO */
+            50% { transform: scale(1.08); }
         }
 
         .emoji {
-            font-size: 1.3rem; /* AUMENTEI UM POUCO */
+            font-size: 1.3rem;
         }
 
         .footer-text {
-            font-size: 0.95rem; /* AUMENTEI UM POUCO */
+            font-size: 0.95rem;
             color: #b0b0b0;
             line-height: 1.5;
         }
 
         .highlight {
-            color: #ffb6c1; /* ROSA SUAVE */
+            color: #ffb6c1;
             font-weight: 500;
         }
 
-        /* Efeitos de brilho sensual */
         .glow {
             position: fixed;
-            width: 400px; /* AUMENTEI */
-            height: 400px; /* AUMENTEI */
+            width: 400px;
+            height: 400px;
             background: radial-gradient(circle, rgba(255, 182, 193, 0.15) 0%, transparent 70%);
             border-radius: 50%;
-            filter: blur(50px); /* AUMENTEI O BLUR */
+            filter: blur(50px);
             animation: float 15s ease-in-out infinite;
             z-index: 0;
             pointer-events: none;
@@ -313,7 +312,6 @@
             66% { transform: translateY(15px) scale(0.9) rotate(240deg); }
         }
 
-        /* Partículas sensuais */
         .particle {
             position: fixed;
             background: radial-gradient(circle, rgba(255, 182, 193, 0.6), transparent);
@@ -386,7 +384,7 @@
     </style>
 </head>
 <body>
-    <!-- IMAGEM DE FUNDO MAIS VISÍVEL -->
+    <!-- IMAGEM DE FUNDO CORRIGIDA -->
     <div class="background-image"></div>
     <div class="overlay"></div>
     
@@ -399,7 +397,8 @@
         <!-- Seção do Perfil -->
         <div class="profile-section">
             <div class="profile-image">
-                <img src="https://ibb.co/N6yP7KDz" alt="Larissa">
+                <!-- IMAGEM DO PERFIL CORRIGIDA -->
+                <img src="https://i.ibb.co/WW2wsf81/Kristel-Evans-095-ejcrr.jpg" alt="Larissa">
             </div>
             <h1 class="name">Larissa</h1>
             <p class="tagline">Sua musa exclusiva.</p>
